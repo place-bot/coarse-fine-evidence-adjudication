@@ -1,0 +1,27 @@
+[
+  {
+    "file": "blurb_data_generation.tar.gz",
+    "url": "https://microsoft.github.io/BLURB/sample_code/data_generation.tar.gz",
+    "sha256": "5f749cbaa2b137aa1086d5610ef8dc5e182cc2a523173e6f26e394c0efad5898"
+  },
+  {
+    "file": "DDIextraction_2013.tar.gz",
+    "url": "https://raw.githubusercontent.com/zhangyijia1979/hierarchical-RNNs-model-for-DDI-extraction/master/DDIextraction2013/DDIextraction_2013.tar.gz",
+    "sha256": "ee760ba7575eaa7292b0f8159b4063afae81f6f78d3f7ac5b0d3217e980bee67"
+  },
+  {
+    "file": "dataset_minus_700_for_github.csv",
+    "url": "https://raw.githubusercontent.com/scrosseye/mime_dataset/199f72025c302baecd639387d37913309e121af4/dataset_minus_700_for_github.csv",
+    "sha256": "da1f46e39e91f0d45d8232b499367634e96255dbbef53a62fdf607aa65ea18eb"
+  },
+  {
+    "file": "semeval-5way.zip",
+    "url": "https://raw.githubusercontent.com/myrosia/semeval-2013-task7/main/semeval-5way.zip",
+    "sha256": "57c14e5c260d8cfd774f3fb954985d94bcfa3407029bfe585179650b907dbf9b"
+  },
+  {
+    "file": "ChemProt_Corpus.zip",
+    "url": "https://huggingface.co/datasets/bigbio/chemprot/resolve/main/ChemProt_Corpus.zip",
+    "sha256": "492e3d607f38e2727b799e9d60263b776ebd2a5e61cf0fb59bea2b3eb68e1c28"
+  }
+]

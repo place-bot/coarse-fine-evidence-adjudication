@@ -1,0 +1,28 @@
+{
+  "direct": {
+    "label": "partially_correct_incomplete",
+    "justification": "The response correctly explains that using non-standard objects (paperclips, hands) leads to inconsistent measurements because they vary in size. However, it doesn’t explicitly state the key purpose from the reference: that standard units ensure everyone knows exactly what the measurement means and gets the same measurement using the same unit.",
+    "evidence_ids": [
+      "E003",
+      "E004"
+    ]
+  },
+  "coarse": {
+    "label": "EXPANDED",
+    "justification": "The response gives some correct reasoning (using nonstandard items like paperclips or hands can vary in size), but it does not fully establish the required idea that a standard unit ensures everyone measures the same and that the measurement meaning is consistent for others.",
+    "evidence_ids": [
+      "E003",
+      "E004",
+      "E000"
+    ]
+  },
+  "fine": {
+    "label": "correct",
+    "justification": "The response explains why standard units matter: without a standard, measurements vary due to different-sized objects (paperclips) or body parts (hands). This matches the reference idea that everyone uses the same unit to get consistent measurements. Closest alternative: partially_correct_incomplete, but here both key points (same-unit consistency and meaning) are conveyed, not missing the core rationale.",
+    "evidence_ids": [
+      "E003",
+      "E004",
+      "E002"
+    ]
+  }
+}

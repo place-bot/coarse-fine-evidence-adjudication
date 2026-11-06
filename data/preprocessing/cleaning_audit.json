@@ -1,0 +1,66 @@
+{
+  "scope": "Five complete candidate pools before pilot selection",
+  "operations": [
+    "Collapse horizontal whitespace",
+    "Normalize line-ending representation while retaining internal newlines",
+    "Trim boundary whitespace",
+    "Recompute biomedical entity offsets through exact character alignment"
+  ],
+  "candidate_pools": {
+    "MIME": {
+      "rows": 26657,
+      "changed_rows": 1877,
+      "changed_fields": 1877,
+      "entity_mismatch_rows_before": 0,
+      "entity_mismatch_rows_after": 0,
+      "non_whitespace_control_characters_preserved": {
+        "U+200B ZERO WIDTH SPACE": 1,
+        "U+200D ZERO WIDTH JOINER": 1
+      },
+      "normalized_duplicate_input_label_conflicts": 8
+    },
+    "SciEntsBank": {
+      "rows": 4969,
+      "changed_rows": 249,
+      "changed_fields": 249,
+      "entity_mismatch_rows_before": 0,
+      "entity_mismatch_rows_after": 0,
+      "non_whitespace_control_characters_preserved": {},
+      "normalized_duplicate_input_label_conflicts": 6
+    },
+    "BEETLE": {
+      "rows": 3941,
+      "changed_rows": 48,
+      "changed_fields": 48,
+      "entity_mismatch_rows_before": 0,
+      "entity_mismatch_rows_after": 0,
+      "non_whitespace_control_characters_preserved": {},
+      "normalized_duplicate_input_label_conflicts": 0
+    },
+    "DDI": {
+      "rows": 2496,
+      "changed_rows": 416,
+      "changed_fields": 495,
+      "entity_mismatch_rows_before": 19,
+      "entity_mismatch_rows_after": 19,
+      "non_whitespace_control_characters_preserved": {},
+      "normalized_duplicate_input_label_conflicts": 0
+    },
+    "ChemProt": {
+      "rows": 11264,
+      "changed_rows": 112,
+      "changed_fields": 112,
+      "entity_mismatch_rows_before": 0,
+      "entity_mismatch_rows_after": 0,
+      "non_whitespace_control_characters_preserved": {},
+      "normalized_duplicate_input_label_conflicts": 0
+    }
+  },
+  "canonical_pool_sha256": {
+    "MIME": "ff90d0a33ea06140cbce74589bc43b58a3e39f30410325709914218b61cb53a1",
+    "SciEntsBank": "11b37934db3cc931c71bce968335e8905bcb92544d22c41b1f44768372654c43",
+    "BEETLE": "96d02a9f42a46ca547db576099bd629eb1a68b95fde44ba9545b25aec66d4bcc",
+    "DDI": "fef5f084b70b7ffdfc042ed404d57455724ea8c95d3e061df80320d78a0f45d6",
+    "ChemProt": "b8bd6df53351eab8b9db2dab467f341e08fd8ac2179a1b16b3b4cac608ff89b8"
+  }
+}

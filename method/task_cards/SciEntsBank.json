@@ -1,0 +1,60 @@
+{
+  "task_name": "SciEntsBank",
+  "prediction_target": {
+    "kind": "student_response",
+    "target_fields": [
+      "student_response"
+    ],
+    "context": "question and any supplied selected option or reference answers"
+  },
+  "native_label_definitions": {
+    "correct": "The response establishes the required answer in context, including legitimate implicit meaning and paraphrases. Reference answers are acceptable alternatives, not a checklist of all required phrases.",
+    "partially_correct_incomplete": "Some required knowledge is correct, but the answer is incomplete.",
+    "contradictory": "An expressed claim contradicts the reference answer.",
+    "irrelevant": "Domain-related information that does not answer the question.",
+    "non_domain": "No meaningful domain content, for example an admission of not knowing."
+  },
+  "coarse_mapping": {
+    "TERMINAL": [
+      "correct"
+    ],
+    "EXPANDED": [
+      "partially_correct_incomplete",
+      "contradictory",
+      "irrelevant",
+      "non_domain"
+    ]
+  },
+  "annotation_rules": [
+    {
+      "id": "TASK:SCOPE",
+      "source": "Existing task input and label definitions",
+      "text": "Classify the student response in the context of its question and the supplied task definitions. The selected option and reference answers are context; the evaluated evidence is the student response."
+    },
+    {
+      "id": "DEF:correct",
+      "source": "Existing fixed native label definition",
+      "text": "The response establishes the required answer in context, including legitimate implicit meaning and paraphrases. Reference answers are acceptable alternatives, not a checklist of all required phrases."
+    },
+    {
+      "id": "DEF:partially_correct_incomplete",
+      "source": "Existing fixed native label definition",
+      "text": "Some required knowledge is correct, but the answer is incomplete."
+    },
+    {
+      "id": "DEF:contradictory",
+      "source": "Existing fixed native label definition",
+      "text": "An expressed claim contradicts the reference answer."
+    },
+    {
+      "id": "DEF:irrelevant",
+      "source": "Existing fixed native label definition",
+      "text": "Domain-related information that does not answer the question."
+    },
+    {
+      "id": "DEF:non_domain",
+      "source": "Existing fixed native label definition",
+      "text": "No meaningful domain content, for example an admission of not knowing."
+    }
+  ]
+}

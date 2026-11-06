@@ -1,0 +1,46 @@
+{
+  "task_name": "MIME",
+  "prediction_target": {
+    "kind": "student_response",
+    "target_fields": [
+      "student_response"
+    ],
+    "context": "question and any supplied selected option or reference answers"
+  },
+  "native_label_definitions": {
+    "Correct": "The explanation establishes correct mathematical reasoning in context.",
+    "Misconception": "An identifiable mathematical misunderstanding or erroneous relation/procedure is expressed, even if the selected option is correct.",
+    "Neither": "The explanation establishes neither correct reasoning nor an identifiable misconception; this can include uninformative, vague, or irrelevant responses."
+  },
+  "coarse_mapping": {
+    "TERMINAL": [
+      "Correct"
+    ],
+    "EXPANDED": [
+      "Misconception",
+      "Neither"
+    ]
+  },
+  "annotation_rules": [
+    {
+      "id": "TASK:SCOPE",
+      "source": "Existing task input and label definitions",
+      "text": "Classify the student response in the context of its question and the supplied task definitions. The selected option and reference answers are context; the evaluated evidence is the student response."
+    },
+    {
+      "id": "DEF:Correct",
+      "source": "Existing fixed native label definition",
+      "text": "The explanation establishes correct mathematical reasoning in context."
+    },
+    {
+      "id": "DEF:Misconception",
+      "source": "Existing fixed native label definition",
+      "text": "An identifiable mathematical misunderstanding or erroneous relation/procedure is expressed, even if the selected option is correct."
+    },
+    {
+      "id": "DEF:Neither",
+      "source": "Existing fixed native label definition",
+      "text": "The explanation establishes neither correct reasoning nor an identifiable misconception; this can include uninformative, vague, or irrelevant responses."
+    }
+  ]
+}

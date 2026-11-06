@@ -1,0 +1,63 @@
+{
+  "task_name": "ChemProt",
+  "prediction_target": {
+    "kind": "entity_pair_relation",
+    "target_fields": [
+      "entity1",
+      "entity2"
+    ],
+    "context": "designated entity occurrences at their supplied offsets in the original sentence"
+  },
+  "native_label_definitions": {
+    "no_relation": "No evaluated chemical-protein relation is expressed for the designated pair. Other relation types and co-occurrence alone belong here.",
+    "CPR:3": "UPREGULATOR / ACTIVATOR: increased target activity or expression, including indirect positive regulation.",
+    "CPR:4": "DOWNREGULATOR / INHIBITOR: decreased target activity or expression, including indirect negative regulation.",
+    "CPR:5": "AGONIST / AGONIST-ACTIVATOR / AGONIST-INHIBITOR: an agonist relation to the target receptor.",
+    "CPR:6": "ANTAGONIST: receptor antagonist relation.",
+    "CPR:9": "SUBSTRATE / PRODUCT OF: the chemical is a substrate, substrate/product, or product of the protein."
+  },
+  "coarse_mapping": {
+    "TERMINAL": [
+      "no_relation"
+    ],
+    "EXPANDED": [
+      "CPR:3",
+      "CPR:4",
+      "CPR:5",
+      "CPR:6",
+      "CPR:9"
+    ]
+  },
+  "annotation_rules": [
+    {
+      "id": "TASK:PAIR",
+      "source": "G1/N6 and evaluated-label mapping",
+      "text": "Classify the designated chemical and gene/protein mentions at their supplied positions. Interpret abbreviations, apposition and coordination in the sentence. A relation of different participants, co-occurrence alone, or an unevaluated relation type does not establish an evaluated relation for this pair."
+    },
+    {
+      "id": "G5",
+      "source": "Guidelines pp.9–10",
+      "text": "Relations may be explicit or implicit in the whole sentence, including biochemical interpretation. Absence of a literal category word does not by itself exclude a relation. The inference must be supported by the supplied text, not merely by a known association between the entities."
+    },
+    {
+      "id": "N7",
+      "source": "Guidelines pp.29–30",
+      "text": "A chemical mention that occurs only inside a protein name does not receive a substrate/product relation to that protein, including when the target protein is its abbreviation. A separate mention of the same chemical is a different candidate and requires its own sentence-supported relation. Do not transfer its relation to the name-internal mention."
+    },
+    {
+      "id": "DEF:CPR9",
+      "source": "Sections 3.11–3.13, pp.20–21",
+      "text": "CPR:9 covers substrate, product, or both. Substrate includes a reactant acted on in an enzyme-mediated reaction and a transporter substrate; product includes an enzymatic-reaction or transporter product. Interpret process roles; the words substrate or product need not appear. Mere association is insufficient."
+    },
+    {
+      "id": "DEF:REG",
+      "source": "Upregulator/downregulator definitions, pp.13–14",
+      "text": "CPR:3 and CPR:4 include increased or decreased target activity or expression, respectively, whether direct or indirect. Do not require direct physical binding for these regulation classes."
+    },
+    {
+      "id": "DEF:ANTAGONIST",
+      "source": "Section 3.3, p.16",
+      "text": "CPR:6 is the expressed antagonist assignment. Interpret relationship-bearing noun phrases, their named members, and target abbreviations in context. Distinguish antagonism from agonism and from other negative regulation."
+    }
+  ]
+}

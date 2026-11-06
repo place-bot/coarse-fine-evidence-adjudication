@@ -1,0 +1,61 @@
+{
+  "task_name": "DDI",
+  "prediction_target": {
+    "kind": "entity_pair_relation",
+    "target_fields": [
+      "entity1",
+      "entity2"
+    ],
+    "context": "designated entity occurrences at their supplied offsets in the original sentence"
+  },
+  "native_label_definitions": {
+    "no_relation": "No interaction is expressed for the designated drug pair.",
+    "advice": "A recommendation or precaution about concomitant use or dose adjustment for the pair.",
+    "effect": "An expressed pharmacodynamic effect, toxicity, or clinical consequence of the interaction.",
+    "mechanism": "An expressed pharmacokinetic mechanism such as altered absorption, metabolism, clearance, or concentration.",
+    "int": "An interaction is stated without specifying mechanism, effect, or advice."
+  },
+  "coarse_mapping": {
+    "TERMINAL": [
+      "no_relation"
+    ],
+    "EXPANDED": [
+      "advice",
+      "effect",
+      "mechanism",
+      "int"
+    ]
+  },
+  "annotation_rules": [
+    {
+      "id": "TASK:SCOPE",
+      "source": "Existing task input and label definitions",
+      "text": "Classify the designated drug mentions at their supplied positions using the original sentence and the supplied interaction definitions."
+    },
+    {
+      "id": "DEF:no_relation",
+      "source": "Existing fixed native label definition",
+      "text": "No interaction is expressed for the designated drug pair."
+    },
+    {
+      "id": "DEF:advice",
+      "source": "Existing fixed native label definition",
+      "text": "A recommendation or precaution about concomitant use or dose adjustment for the pair."
+    },
+    {
+      "id": "DEF:effect",
+      "source": "Existing fixed native label definition",
+      "text": "An expressed pharmacodynamic effect, toxicity, or clinical consequence of the interaction."
+    },
+    {
+      "id": "DEF:mechanism",
+      "source": "Existing fixed native label definition",
+      "text": "An expressed pharmacokinetic mechanism such as altered absorption, metabolism, clearance, or concentration."
+    },
+    {
+      "id": "DEF:int",
+      "source": "Existing fixed native label definition",
+      "text": "An interaction is stated without specifying mechanism, effect, or advice."
+    }
+  ]
+}

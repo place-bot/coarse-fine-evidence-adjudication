@@ -1,0 +1,63 @@
+{
+  "model": "gpt-5.4-nano-2026-03-17",
+  "reasoning": {
+    "effort": "none"
+  },
+  "temperature": 0.7,
+  "store": false,
+  "service_tier": "default",
+  "routes": {
+    "direct_classification": {
+      "max_output_tokens": 400,
+      "metadata": {
+        "study": "CFEA_20261028",
+        "case_id": "",
+        "route": "Direct",
+        "repeat": "0",
+        "repair": "False",
+        "serialization": "clean_whitespace_evidence_ids_v2",
+        "prompt_revision": "shared_CFEA_task_cards"
+      },
+      "format_name": "classification"
+    },
+    "coarse_judgment": {
+      "max_output_tokens": 400,
+      "metadata": {
+        "study": "CFEA_20261028",
+        "case_id": "",
+        "route": "G",
+        "repeat": "0",
+        "repair": "False",
+        "serialization": "clean_whitespace_evidence_ids_v2",
+        "prompt_revision": "shared_CFEA_task_cards"
+      },
+      "format_name": "classification"
+    },
+    "fine_label_comparison": {
+      "max_output_tokens": 400,
+      "metadata": {
+        "study": "CFEA_20261028",
+        "case_id": "",
+        "route": "F",
+        "repeat": "0",
+        "repair": "False",
+        "serialization": "clean_whitespace_evidence_ids_v2",
+        "prompt_revision": "shared_CFEA_task_cards"
+      },
+      "format_name": "classification"
+    },
+    "conflict_adjudication": {
+      "max_output_tokens": 600,
+      "metadata": {
+        "study": "CFEA_20261028",
+        "case_id": "",
+        "route": "A",
+        "repeat": "0",
+        "repair": "False",
+        "serialization": "clean_whitespace_evidence_ids_v2",
+        "prompt_revision": "singlepass_three_reasons_v1"
+      },
+      "format_name": "singlepass_adjudication"
+    }
+  }
+}
